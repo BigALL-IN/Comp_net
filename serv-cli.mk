@@ -1,7 +1,8 @@
 #fisier folosit pentru compilarea serverului&clientului UDP
-
+#	g++ serverAttempt.cpp -o serv -lsfml-graphics -lsfml-window -lsfml-system
+#	g++ clientAttempt.cpp -o cli -lsfml-graphics -lsfml-window -lsfml-system
 all:
-	gcc serverAttempt.c -o serv
-	gcc clientAttempt.c  -o cli
+	g++ serverAttempt.cpp -o serv -lsfml-graphics -lsfml-window -lsfml-system
+	g++ clientAttempt.cpp -o cli -lsfml-graphics -lsfml-window -lsfml-system
 clean:
 	rm -f cliUdp servUdp
